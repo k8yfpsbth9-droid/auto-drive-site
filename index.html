@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive — Автомобильный салон</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        .cars {
+            padding: 50px 8%;
+        }
+
+        .cars h2, .about h2, .contacts h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .car-list {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .car {
+            background: white;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .car img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 20px;
+        }
+
+        .car h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .about, .contacts {
+            background: white;
+            padding: 50px 8%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .about p, .contacts p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background: #111827;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>AutoDrive</h1>
+    <nav>
+        <a href="#cars">Автомобили</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Автомобили для твоего пути</h2>
+    <p>Надёжные автомобили по доступным ценам</p>
+</section>
+
+<section class="cars" id="cars">
+    <h2>Наши автомобили</h2>
+
+    <div class="car-list">
+
+        <div class="car">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="BMW">
+            <div class="car-info">
+                <h3>BMW 3 Series</h3>
+                <p>Современный и динамичный седан.</p>
+                <br>
+                <p class="price">от 35 000 €</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Mercedes">
+            <div class="car-info">
+                <h3>Mercedes-Benz C-Class</h3>
+                <p>Комфорт, стиль и современные технологии.</p>
+                <br>
+                <p class="price">от 39 000 €</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Porsche">
+            <div class="car-info">
+                <h3>Porsche 911</h3>
+                <p>Спортивный автомобиль для ярких поездок.</p>
+                <br>
+                <p class="price">от 120 000 €</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>О нас</h2>
+    <p>
+        AutoDrive — небольшой автомобильный салон, где можно выбрать
+        современный автомобиль для города и путешествий. Мы ценим качество,
+        комфорт и безопасность наших клиентов.
+    </p>
+</section>
+
+<section class="contacts" id="contacts">
+    <h2>Контакты</h2>
+    <p>
+        📍 Вильнюс, Литва<br>
+        📞 +370 600 00 000<br>
+        ✉️ info@autodrive.lt
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 AutoDrive. Учебный проект.</p>
+</footer>
+
+</body>
+</html>
